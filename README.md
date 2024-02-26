@@ -20,3 +20,65 @@
 18. [ ] Only Managers and Admins can access User Settings 
 19. [ ] Only Managers and Admins can create new users 
 20. [ ] Desktop mode is most important but should be available in mobile 
+
+### Run this project
+
+- Clone this project
+- Then run:
+  
+```shell
+$ npm init
+```
+- Install some dependencies
+
+***NOTE:*** 
+- You can run all the dependencies in one line
+  - Example: npm install bcrypt cooki-parser cors ..., etc.
+
+```shell
+$ npm install bcrypt
+```
+```shell
+$ npm install cookie-parser
+```
+```shell
+$ npm install cors
+```
+```shell
+$ npm install date-fns
+```
+```shell
+$ npm install dotenv
+```
+```shell
+$ npm install express
+```
+```shell
+$ npm install mongoose
+```
+```shell
+$ npm install uuid
+```
+
+- Install nodemon as dev dependecie
+
+```shell
+$ npm install nodemon --save-dev
+```
+
+- Replace "scripts" attribute so you can start nodemon with dev option
+
+```package.json
+"scripts": {
+    "dev": "nodemon server",
+    "start": "node server"
+  }
+```
+
+- Run the backend project
+  
+```shell
+$ npm run dev
+```
+
+
