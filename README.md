@@ -61,6 +61,7 @@ $ npm install uuid
 ```
 
 - Install nodemon as dev dependecie
+- Nodemon allows the server to rerun after saving code 
 
 ```shell
 $ npm install nodemon --save-dev
