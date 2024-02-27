@@ -56,6 +56,12 @@ $ npm install express
 ```shell
 $ npm install mongoose
 ```
+
+- Auto generate identification in sequence
+
+```shell
+$ npm install mongoose-sequence
+```
 ```shell
 $ npm install uuid
 ```
