@@ -11,6 +11,7 @@ const corsOptions = require('./config/corsOption')
 const path = require('path')
 const PORT = process.env.PORT || 3500
 
+
 app.use(logger)
 app.use(cors(corsOptions))
 app.use(express.json())
