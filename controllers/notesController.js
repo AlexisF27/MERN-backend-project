@@ -86,25 +86,25 @@ const updateNote = asyncHandler(async (req, res) => {
 // @route DELETE /notes
 // @access Private
 const deleteNote = asyncHandler(async (req, res) => {
-  const { id } = req.body
+  const { id } = req.body;
 
   // Confirm data
   if (!id) {
-      return res.status(400).json({ message: 'Note ID required' })
+    return res.status(400).json({ message: 'Note ID required' });
   }
 
-  // Confirm note exists to delete 
-  const note = await Note.findById(id).exec()
+  // Confirm note exists to delete
+  const note = await Note.findById(id).exec();
 
   if (!note) {
-      return res.status(400).json({ message: 'Note not found' })
+    return res.status(400).json({ message: 'Note not found' });
   }
 
-  const result = await note.deleteOne()
+  const result = await note.deleteOne();
 
-  const reply = `Note '${result.title}' with ID ${result._id} deleted`
+  const reply = `Note '${result.title}' with ID ${result._id} deleted`;
 
-  res.json(reply)
+  res.json(reply);
 });
 
 module.exports = {
