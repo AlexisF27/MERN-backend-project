@@ -65,6 +65,11 @@ $ npm install mongoose-sequence
 ```shell
 $ npm install uuid
 ```
+```shell
+$ npm install express-async-handler
+```
+
+
 
 - Install nodemon as dev dependecie
 - Nodemon allows the server to rerun after saving code 
