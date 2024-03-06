@@ -84,7 +84,7 @@ $ npm install nodemon --save-dev
 "scripts": {
     "dev": "nodemon server",
     "start": "node server"
-  }
+  },
 ```
 
 - Run the backend project
